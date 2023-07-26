@@ -1,0 +1,8 @@
+{
+    "path": "/",
+    "port": "8080",
+    "listen": "0.0.0.0",
+    "device": "/dev/ttyACM0",
+    "baud": 115200,
+    "keyword": "snap"
+}
