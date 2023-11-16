@@ -76,7 +76,7 @@ def main():
     # 打开 OpenMV 串口设备
     serial_dev = serial.Serial(
         dsrdtr=True, rtscts=False,
-        xonxoff=False, port=config['device'],
+        xonxoff=False, port=config['device'], timeout=1,
         baudrate=config['baud'], parity=serial.PARITY_NONE,
         bytesize=serial.EIGHTBITS, stopbits=serial.STOPBITS_ONE,
     )
