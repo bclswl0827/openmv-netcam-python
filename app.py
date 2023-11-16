@@ -38,7 +38,7 @@ def read_config(path: str) -> dict:  # 解析配置文件
 
 def parse_args() -> dict:  # 解析命令行参数
     parse = argparse.ArgumentParser()
-    parse.add_argument('--config', type=str, required=True,
+    parse.add_argument('--config', type=str, default='./config.json',
                        help='Path to config file')
     return vars(parse.parse_args())
 
